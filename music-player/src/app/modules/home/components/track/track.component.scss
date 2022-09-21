@@ -1,0 +1,41 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    border-bottom: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+td {
+    border-bottom: 1px solid #f5f3f3;
+    text-align: left;
+    padding: 16px 8px;
+}
+
+.track-content:hover {
+    background: #f5f3f3;
+}
+
+.col-one {
+    display: flex;
+    align-items: center;
+    padding: 5px 0px 5px 8px;
+    font-weight: bold;
+    img {
+        width: 45px;
+        height: 45px;
+        margin: 0 5px;
+        border-radius: 5px;
+    }
+}
+
+.col-two {
+    display: flex;
+    flex-direction: column;
+    span:nth-child(2) {
+        color: #bdc3c7;
+    }
+}

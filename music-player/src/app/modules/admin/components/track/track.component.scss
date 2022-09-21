@@ -1,0 +1,77 @@
+.container {
+    width: 100%;
+}
+
+// BUTTON
+
+.btn-container {
+    display: flex;
+    justify-content: end;
+    padding: 0 4rem;
+
+    button {
+        background-color: transparent;
+        cursor: pointer;
+        background-color: rgba(226, 149, 124, 1);
+        border: 1px solid #dedede;
+        color: #fff;
+        font-weight: bold;
+        padding: 0.5rem 1.5rem;
+        border-radius: 20px;
+    }
+
+    button:focus {
+        outline: 0;
+    }
+
+    button:hover {
+        background-color: rgba(244, 169, 142, 1);
+    }
+}
+
+
+// TABLE
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    border-bottom: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+td {
+    border-bottom: 1px solid #f5f3f3;
+    text-align: left;
+    padding: 16px 8px;
+}
+
+.track-content:hover {
+    background: #f5f3f3;
+}
+
+.col-one {
+    display: flex;
+    align-items: center;
+    padding: 5px 0px 5px 8px;
+    font-weight: bold;
+
+    img {
+        width: 45px;
+        height: 45px;
+        margin: 0 5px;
+        border-radius: 5px;
+    }
+}
+
+.col-two {
+    display: flex;
+    flex-direction: column;
+
+    span:nth-child(2) {
+        color: #bdc3c7;
+    }
+}

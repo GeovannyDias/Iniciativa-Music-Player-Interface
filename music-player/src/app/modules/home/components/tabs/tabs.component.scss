@@ -1,0 +1,84 @@
+.tabs {
+    position: relative;
+    margin-top: 2rem;
+    // background: #1abc9c;
+    height: 14.75rem;
+}
+
+.tabs::before,
+.tabs::after {
+    content: "";
+    display: table;
+}
+
+.tabs::after {
+    clear: both;
+}
+
+.tab {
+    float: left;
+}
+
+.label-text {
+    position: relative;
+    display: block;
+    line-height: 1.75em;
+    height: 3em;
+    padding: 0 1.618em 0 1em;
+    color: #000;
+    top: 0;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.tab-switch {
+    display: none;
+}
+
+.tab-label {
+    position: relative;
+    display: block;
+    line-height: 2.75em;
+    height: 3em;
+    padding: 0 1.618em;
+    // background: #1abc9c;
+    // border-right: 0.125rem solid #efefef;
+    color: #bdc3c7;
+    cursor: pointer;
+    top: 0;
+    transition: all 0.25s;
+}
+
+.tab-label:hover {
+    top: -0.25rem;
+    transition: top 0.25s;
+    // border-bottom: 1px solid #7e7e7e;
+
+}
+
+.tab-content {
+    position: absolute;
+    // top: 2.75em;
+    left: 0;
+    padding: 1.618rem;
+    color: #555;
+    // border-bottom: 0.25rem solid #bdc3c7;
+    opacity: 0;
+    transition: all 0.35s;
+
+    width: 100%;
+}
+
+.tab-switch:checked+.tab-label {
+    background: #fff;
+    color: #555;
+    // border-bottom: 2px solid #bdc3c7;
+    border-bottom: 1px solid #555;
+    transition: all 0.35s;
+    // top: -0.0625rem;
+}
+
+.tab-switch:checked+label+.tab-content {
+    opacity: 1;
+    transition: all 0.35s ease-in-out;
+}

@@ -1,0 +1,32 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 8rem;
+}
+
+.traks {
+    // width: 100%;
+    width: calc(100% - 310px);
+}
+
+.albums {
+    width: 310px;
+}
+
+@media(max-width: 1100px) {
+    .container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 0 8rem;
+    }
+
+    .traks {
+        width: 100%;
+    }
+
+    .albums {
+        width: 100%;
+    }
+}
