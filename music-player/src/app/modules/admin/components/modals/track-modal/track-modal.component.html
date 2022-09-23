@@ -1,12 +1,26 @@
 <div #myModal class="container">
     <div class="content">
-        <p>Some content here...</p>
-
-
-        <input type="text" placeholder="Search" />
-
-
+        <p>Title Componet...</p>
         <br>
-        <button (click)="close()">Close</button>
+        <form [formGroup]="formTrack">
+            <label for="">Name:</label>
+            <input type="text" placeholder="Name" formControlName="name" required />
+            <label for="">Artist:</label>
+            <input type="text" placeholder="Name" formControlName="artist" required />
+            <label for="">Description:</label>
+            <input type="text" placeholder="Description" formControlName="description" required />
+            <label for="">Duration:</label>
+            <input type="text" placeholder="Duration" formControlName="duration" required />
+            <label for="">Image:</label>
+            <input type="text" placeholder="Image" formControlName="image" required />
+            <label for="">Genre:</label>
+            <input type="text" placeholder="Genre" formControlName="genre" required />
+            <br />
+            <br />
+            <div class="btn-container">
+                <button (click)="validateForm()">Acept</button>
+                <button (click)="close()">Cancel</button>
+            </div>
+        </form>
     </div>
 </div>

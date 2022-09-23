@@ -1,7 +1,7 @@
 <!-- https://www.compart.com/en/unicode/U+1F589 -->
 
 <div class="container">
-    <app-track-modal #modal></app-track-modal>
+    <app-track-modal #modal (closeOutput)="closeModalEventListener($event)"></app-track-modal>
     <div class="btn-container">
         <button (click)="openModal()">Open Modal</button>
     </div>
@@ -18,6 +18,29 @@
             </tr>
         </thead>
         <tbody>
+            <tr class="track-content" *ngFor="let track of trackList$; let i = index">
+                <td class="col-one">
+                    <span> {{i + 1}} </span>
+                    <img [src]="track.image" [alt]="track.name" srcset="">
+                </td>
+                <td>
+                    <div class="col-two">
+                        <span>{{track.name}}</span>
+                        <span>{{track.artist}}</span>
+                    </div>
+                </td>
+                <td>Name Album</td>
+                <td>{{track.duration}}</td>
+                <td>36585</td>
+                <td>
+                    <span>🖉</span>
+                    <span>🗑</span>
+                </td>
+            </tr>
+
+
+            
+
             <tr class="track-content">
                 <td class="col-one">
                     <span> 01 </span>
